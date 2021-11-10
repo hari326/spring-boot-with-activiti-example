@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up JDK 11
-        run: openssl 
+      - name: openssl test
+        run: PWD= $(echo  "U2FsdGVkX1/LtfwlAts6IIYBedyOJ7FsvlxyFIxPUsI6ClwHSivWboJAbbnbpW0W" | openssl aes-256-cbc -a -d);echo "$PWD" 
